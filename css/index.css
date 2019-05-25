@@ -1,0 +1,411 @@
+/*初始化样式
+  “ * ”号代表所有
+  将所有样式都设置成盒子模型的高度是多少就是多少
+ */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clear:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.headerAd{
+	background: #444;
+	height: 40px;
+	color: #a8a8aa;
+}
+
+.headerAd .adContent{
+	width: 964.8px;
+	height: 40px;
+	margin: 0 auto;
+	text-align: right;
+	line-height: 40px;
+	font-size: 11px;
+}
+
+.nav{
+	height: 44px;
+	background: rgba(45,45,45,0.98);
+}
+
+.nav .navContent{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.nav .navContent a{
+	display: inline-block;
+	width: 111px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+	float: left;
+	/*下划线去掉*/
+	text-decoration: none;
+	font-size: 12px;
+	transition: all 0.5s;
+}
+
+.nav .navContent a:hover{
+	/*使整个盒子变暗
+	background-color: darkgray;*/
+	color: darkgrey;
+}
+
+.nav .navContent .logo{
+	background-image: url(../img/image_small.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.nav .navContent .serch{
+	background-image: url(../img/image_serch.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	float: right;
+}
+
+.nav .navContent .shoppingCart{
+	background-image: url(../img/image_shoppingcart.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	float: right;
+}
+
+.b1{
+	margin-top: 84px;
+}
+
+.banner{
+	text-align: center;
+	padding: 50px 20px;
+	background-color: #fafafa;
+	font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.banner h1{
+	font-size: 28px;
+	line-height: 1;
+	padding: 10px 0;
+	background-position: center;
+	text-align: center;
+}
+
+.banner p{
+	font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 19px;
+	line-height: 1.5;
+	font-weight: 400px;
+	text-align: center;
+}
+
+.banner a{
+	color: #0070c9;
+	text-decoration: none;
+	font-size: 19px;
+	line-height: 1.4;
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+}
+
+.b2{
+	margin-top: 20px;
+	height: 580px;
+	background-image:url(../img/iphone_xr__b0z59ak0bqdy_medium.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;	
+}
+
+.b3{
+	margin-top: 20px;
+	height: 580px;
+	background-image: url(../img/iphone_xs__cm637qa5dno2_medium.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;	
+}
+
+.b4{
+	margin-top: 20px;
+	height: 580px;
+	background-image: url(../img/series_4__b539g9eyf22u_medium.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;	
+}
+
+.adLink .banner{
+	width: 50%;
+	margin-top: 30px;
+	height: 590px;
+	background-color: #fafafa;
+	float: left;
+	font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.adLink h1{
+	padding: 0;
+}
+
+.adLink p{
+	font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 19px;
+	line-height: 1.21053;
+	font-weight: 400;
+	color: #fff;
+}
+
+.adLink a{
+	color: #fff;
+	font-size: 17px;
+	line-height: 1.23543;
+	font-weight: 400;
+	font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.adLink .b5{
+	border-top:12px solid #fff ;
+	border-bottom:12px solid #fff ;
+	border-left:12px solid #fff ;
+	border-right:6px solid #fff ;
+	
+	background-image: url(../img/alien__b0htewjo3a6a_large.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.adLink .b6{
+	border-top:12px solid #fff ;
+	border-bottom:12px solid #fff ;
+	border-left:12px solid #fff ;
+	border-right:6px solid #fff ;
+	
+	background-image:url(../img/apple_music__gdfamywhn6ye_large.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.adLink .b6 .link span img{
+	width: 15px;
+	height: 15px;
+}
+
+.adLink .a h1{
+		font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+		font-size: 32px;
+		line-height: 1.125;
+		font-weight: 600;
+		color: #111;
+}
+
+.adLink .a p{
+	font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 17px;
+	line-height: 1.21053;
+	font-weight: 400;
+	color: #111111;
+}
+
+.adLink .a a{
+	font-size: 17px;
+	color: #0070c9;
+	font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	line-height: 1.23543;
+	font-weight: 400;
+}
+
+.adLink .b7{
+	border-top:12px solid #fff ;
+	border-bottom:12px solid #fff ;
+	border-left:12px solid #fff ;
+	border-right:6px solid #fff ;
+	
+	background-image:url(../img/ipad_pro__cesqtbwwmi2u_medium.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.adLink .b8{
+	border-top:12px solid #fff ;
+	border-bottom:12px solid #fff ;
+	border-left:12px solid #fff ;
+	border-right:6px solid #fff ;
+	
+	background-image:url(../img/macbook_air__knzp0i282eyy_medium.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.adLink .b9{
+	border-top:12px solid #fff ;
+	border-bottom:12px solid #fff ;
+	border-left:12px solid #fff ;
+	border-right:6px solid #fff ;
+	
+	background-image:url(../img/airpods_magic__geiladfa3kqe_medium.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.adLink .b10{
+	border-top:12px solid #fff ;
+	border-bottom:12px solid #fff ;
+	border-left:12px solid #fff ;
+	border-right:6px solid #fff ;
+	
+	background-image:url(../img/100_things__f273j3ysx46e_large.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.adLink .useless{
+	height: 400px;
+}
+
+.adLink .b10 p{
+	font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 32px;
+	line-height: 1.125;
+	font-weight: 600;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.adLink .b10 a{
+	font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 17px;
+	line-height: 1.23543;
+	font-weight: 400;
+	color: #6bf;
+	text-align: center;
+}
+
+.fotter{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 250px;
+	height: 680px;
+	background-color: #f2f2f2;
+}
+
+.fotter .a1{
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 12px;
+	line-height: 1.33341;
+	font-weight: 400;
+	color: #888;
+	border-bottom: 1px solid #d6d6d6;
+	padding: 17px 0 11px;	
+}
+
+.item{
+	width: 20%;
+	float: left;
+	padding: 0 ;
+}
+
+.item h5{
+	font-size: 12px;
+	line-height: 1.33341;
+	font-weight: 600;
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	margin: 0;
+	padding: 10px 0;
+	margin-bottom: .8em;
+	margin-top: 0.5em;
+	color: inherit;
+}
+
+.item a{
+	color: #555;
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 12px;
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-weight: 400;
+	line-height: 2.33341;
+}
+
+.fotter .itemParent{
+	height: 400px;
+}
+
+.fotter .fotterLink{
+	margin-bottom: 7px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #d6d6d6;
+}
+
+.fotter .fotterLink p{
+	color: #555;
+	margin-right: 20px;
+	font-size: 12px;
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-weight: 400;
+	line-height: 2.33341;
+}
+
+.fotter .fotterLink a{
+	color: #0070c9;
+	text-decoration: none;
+	font-size: 13px;
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-weight: 400;
+	line-height: 2.33341;
+}
+
+.fiannly{
+	height: 30px;
+}
+
+.fotter .fiannly p{
+	color: #888;
+	margin-right: 30px;
+	margin-top: 5px;
+	float: left;
+	font-size: 13px;
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.fotter .fiannly a{
+	border-right: 1px solid #d6d6d6;
+	margin-right: 7px;
+	padding-right: 10px;
+	display: inline-block;
+	margin-top: 5px;
+	color: #555;
+	text-decoration: none;
+	font-size: 9px;
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.yyzz p{
+	color: #888;
+	margin-right: 30px;
+	margin-top: 5px;
+	float: left;
+	font-size: 9px;
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.yyzz a{
+	margin-top: 5px;
+	color: #888;
+	text-decoration: none;
+	font-size: 9px;
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
